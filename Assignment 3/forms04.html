@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Health Survey Form</title>
+    </head>
+    <body>
+        <h1>Health Survey Form</h1>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" required><br><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br><br>
+            <label for="height">Height (cm):</label><br>
+            <input type="number" name="height" required><br><br>
+            <label for="weight">Weight (kg):</label><br>
+            <input type="number" name="weight" required><br><br>
+            <label for="lifestyle">Lifestyle Questions:</label><br>
+            <input type="checkbox" name="lifestyle" value="smoking"> Smoking<br>
+            <input type="checkbox" name="lifestyle" value="alcohol"> Alcohol Consumption<br>
+            <input type="checkbox" name="lifestyle" value="exercise"> Regular Exercise<br>
+            <input type="checkbox" name="lifestyle" value="sleep"> Good Sleep Pattern<br><br>
+            <label for="diet">Dietary Preference:</label><br>
+            <select name="diet">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="nonvegetarian">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select><br><br>
+            <label for="activity">Activity Level:</label><br>
+            <select name="activity">
+                <option value="sedentary">Sedentary</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+            </select><br><br>
+            <label for="health concerns">Optional Health Concerns:</label><br>
+            <textarea name="healthConcerns" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

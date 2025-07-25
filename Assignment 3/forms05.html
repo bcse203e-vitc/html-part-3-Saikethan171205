@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Travel Booking Form</title>
+    </head>
+    <body>
+        <h2>Travel Booking Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" name="fullname" id="fullname" required><br><br>
+            <label for="contact">Contact Information:</label><br>
+            <input type="text" name="contact" id="contact" required><br><br>
+            <label for="destination">Destination:</label><br>
+            <select name="destination">
+                <option value="paris">Paris</option>
+                <option value="newyork">New York</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sydney">Sydney</option>
+            </select><br><br>
+            <label for="traveldates">Travel Dates:</label><br>
+            <input type="date" name="traveldate" id="traveldate" required><br><br>
+            <label for="travels">Number of Travelers:</label><br>
+            <input type="number" id="travelers" name="travelers" min="1" required><br><br>
+            <label for="travelclass">Travel Class:</label><br>
+            <input type="radio" name="class" value="economy" onclick=""> Economy<br>
+            <input type="radio" name="class" value="business" onclick=""> Business<br>
+            <input type="radio" name="class" value="first" onclick=""> First Class<br><br>
+            <label for="insurance">
+                <input type="checkbox" name="insurance"> Add Travel Insurance
+            </label><br><br>
+            <label for="totalcost">Total Cost:</label><br>
+            <input type="text" id="totalCost" name="totalCost" readonly><br><br>
+            <input type="button" value="Calculate Cost" onclick="">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+    </body>
+</html>

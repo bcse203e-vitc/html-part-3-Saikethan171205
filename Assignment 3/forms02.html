@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Registration Form for an Online Event</title>
+    </head>
+    <body>
+        <form action="Registration" method="post">
+            <label for="Fullname">Fullname:</label><br>
+            <input type="text" id="Fullname" name="Fullname" required><br><br>
+            <label for="email">Email:</label><br>
+            <input action="email" id="email" name="email" required><br><br>
+            <label for="phonenumber">Phone Number:</label><br>
+            <input action="number" id="phonenumber" name="phonenumber" required><br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+            <label for="age group">Age Group:</label><br>
+            <select name="age">
+                <option value="under 18">Under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="31-40">31-40</option>
+                <option value="40 Plus">40 Plus</option>
+            </select><br><br>
+            <label for="intrests">Types of Intrests:</label><br>
+            <input type="checkbox" name="topic" value="tech">Technology<br>
+            <input type="checkbox" name="topic" value="health">Health<br>
+            <input type="checkbox" name="topic" value="Education">Education<br><br>
+            <label for="Additional Comments">Additional Comments:</label><br>
+            <textarea name="Comments" rows="5" col="55"></textarea><br><br>
+            <input type="submit" name="Register">
+        </form>
+    </body>
+</html>
